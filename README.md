@@ -25,8 +25,12 @@ sudo rm -rf default
 sudo vim /etc/nginx/sites-available/<nginx-file-name>
 
 ```
-
-
+### Domain and SSL setup
+```ruby
+sudo apt-get install certbot python3-certbot-nginx
+sudo certbot --nginx -d <domain-name>
+sudo systemctl reload nginx
+```
 
 ### run mongo db locally 
 ```ruby
